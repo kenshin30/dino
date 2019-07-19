@@ -1,0 +1,134 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+ 
+ 
+.background{
+
+    
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    
+    img{
+        position: absolute;
+    width: 100%;
+    height: 100vh;
+        
+    }
+
+    
+
+
+
+}
+@keyframes yourAnimation{
+    0%{
+    
+    opacity: 0;
+}
+100%{
+    
+    opacity: 1;
+
+
+}
+
+}
+.slanted{
+    animation: yourAnimation 3s forwards 0s ease;
+
+}
+.content>*{
+animation: yourAnimation 6s forwards 0s ease;
+
+
+}
+ .about{
+
+        background: green;
+        width: 100%;
+        height: 100vh;
+        z-index:4;
+        opacity: 1;
+
+    }
+ 
+.content
+{
+    font-size: 1.5rem;
+    line-height:3rem;
+    display: flex;
+position: relative;
+width: 100%;
+height: 100vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+color: white;
+z-index: 0;
+
+}
+.content>*{
+max-width: 44.6%;
+
+
+}
+h1{
+font-size: 3rem;
+
+}
+.slanted{
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.35;
+    z-index:1;
+ 
+
+    background-color: black;
+    transform: rotate(45deg);
+    border: 2px solid white;
+    width: 100%;
+    height: 14%;
+
+&.a{
+  right: -33%;
+  bottom: 88%;
+}
+&.b{
+   
+ top: 88%;
+ left: -33%;
+}
+}
+.about{
+  background: #3f3f3f;
+} 
+
+.background.about{
+
+    background: #3f3f3f;
+    .slanted{
+
+         transform: rotate(-225deg);
+
+             &.c{
+            left: 33%;
+            top: 88%;
+
+         }
+         &.d{
+            right:33%;
+            top: -2%;
+
+
+         }
+}
+   }
