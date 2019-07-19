@@ -96,11 +96,18 @@ h1 {
   opacity: 0.35;
   z-index: 1;
   background-color: black;
+  cursor: pointer;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   border: 2px solid white;
   width: 100%;
   height: 14%;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.slanted:hover {
+  background: gray;
 }
 
 .slanted.a {
@@ -115,10 +122,8 @@ h1 {
 
 .about {
   background: #3f3f3f;
-}
-
-.background.about {
-  background: #3f3f3f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#aadddd), to(#3f3f3f));
+  background: linear-gradient(top, #aadddd 0%, #3f3f3f 100%);
 }
 
 .background.about .slanted {
