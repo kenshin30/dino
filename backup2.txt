@@ -1,22 +1,10 @@
-$timing:0.6s;
-$shining:4s;
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 
 }
- .image-container{
-animation: check 6s linear infinite alternate-reverse ;
-
-}
-@keyframes check{
-
-0%{opacity: 1;}
-100%{opacity: .68;}
-
-
-}
+ 
  
 .background{
 
@@ -39,8 +27,30 @@ animation: check 6s linear infinite alternate-reverse ;
 
 
 }
+.slanted.intro{
+    animation: reslant 1.8s linear 1 normal, yourAnimation 3s forwards 0s ease, shine 2s linear 1 alternate;
+    animation-fill-mode: reverse;
+    
+
+}
+body{
+animation: check 2s linear infinite alternate-reverse;
+
+}
+@keyframes check{
+
+0%{opacity: 1;}
+100%{opacity: .9;}
 
 
+}
+.slanted{
+    animation:  yourAnimation 2s forwards 0s ease, shine 3s linear 1 alternate;
+
+}
+
+ 
+ 
 @keyframes yourAnimation{
     0%{
     
@@ -54,38 +64,7 @@ animation: check 6s linear infinite alternate-reverse ;
 }
 
 }
-// .slanted.intro{
-//     animation: reslant 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine 5s linear 1 alternate-reverse;
-//     animation-fill-mode: reverse;
-    
 
-// }
-@keyframes fontic{
-0%{
-border: 2px solid white;
-
-}
-100%{
-border: 2px solid red;
-
-}}
-@keyframes fonticB{
-0%{
-border: 2px solid red;
-
-}
-100%{
-border: 2px solid white;
-
-}
-}
-
-
-// .slanted{
-//     animation:  reslant 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine 5s linear 1 reverse, 
-//     fontic 3s linear infinite alternate-reverse;
-
-// }
 .content>*{
 animation: yourAnimation 6s forwards 0s ease;
 
@@ -99,31 +78,16 @@ animation: yourAnimation 6s forwards 0s ease;
         transform : rotate(45deg);
     }
 }
- 
 @keyframes shine{
-0%{background: black;  }
-40%{  border: 2px solid white;   };
-88%{ background: gray;}
-100%{background: white; }
- 
-
-
-}
-
-
- 
-@keyframes appear{
-
-from{
-height:1%;
+0%{background: black;  border: 2px solid white;}
+18%{  border: 2px solid white;   };
+36%{ background: gray;}
+54%{background: white; border: 4px solid red;}
+72%{ background: gray;}
+90%{  border: 2px solid white;   };
+100%{background: black;  border: 2px solid white;}
 
 }
-
-to{
-height:14%;
-}
-}
-
  .about{
 
         background: green;
@@ -185,13 +149,11 @@ font-size: 3rem;
 &.a{
   right: -33%;
   bottom: 88%;
-  animation: fontic $timing linear infinite alternate-reverse,reslant 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine $shining linear 1 reverse; 
 }
 &.b{
    
  top: 88%;
  left: -33%;
- animation: fonticB $timing linear infinite alternate-reverse, reslant 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine $shining linear 1 reverse;   
 }
 }
 .about{
@@ -210,22 +172,14 @@ font-size: 3rem;
              &.c{
             left: 33%;
             top: 88%;
-            animation: fontic $timing linear infinite alternate-reverse, reslantB 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine $shining linear 1 reverse, appear 1.5s linear 1 normal; ;
 
          }
          &.d{
             right:33%;
             top: -2%;
-            animation: fonticB $timing linear infinite alternate-reverse, reslantB 1.5s linear 1 normal, yourAnimation 3s forwards 0s ease, shine $shining linear 1 reverse,  appear 1.5s linear 1 normal;
 
 
          }
 }
    }
 
-.page1{
-
-background : #3fffff;
-
-
-}
