@@ -6,10 +6,14 @@ padding: 0;
 box-sizing: border-box;
 
 }
- .image-container{
-animation: check 6s linear infinite alternate-reverse ;
+.image-container{
+animation: check 3s linear infinite alternate-reverse ;
+ 
 
 }
+ 
+
+
 @keyframes check{
 
 0%{opacity: 1;}
@@ -126,7 +130,7 @@ height:14%;
 
  .about{
 
-        background: green;
+  
         width: 100%;
         height: 100vh;
         z-index:4;
@@ -195,13 +199,12 @@ font-size: 3rem;
 }
 }
 .about{
-  background: #3f3f3f;
+   
   background: linear-gradient(top, #516666 0%, #3f3f3f 100%);
    
 } 
 
 .background.about{
-
  
     .slanted{
 
@@ -223,9 +226,4 @@ font-size: 3rem;
 }
    }
 
-.page1{
-
-background : #3fffff;
-
-
-}
+ 
