@@ -42,8 +42,8 @@
 }
 
 .slanted {
-  -webkit-animation: yourAnimation 3s forwards 0s ease, shine 9s linear infinite alternate;
-          animation: yourAnimation 3s forwards 0s ease, shine 9s linear infinite alternate;
+  -webkit-animation: yourAnimation 3s forwards 0s ease, shine 5s linear infinite alternate;
+          animation: yourAnimation 3s forwards 0s ease, shine 5s linear infinite alternate;
 }
 
 .content > * {
@@ -54,22 +54,18 @@
 @-webkit-keyframes shine {
   0% {
     background: black;
-    border: 4px solid white;
   }
   100% {
     background: gray;
-    border: 4px solid #ee5e5e;
   }
 }
 
 @keyframes shine {
   0% {
     background: black;
-    border: 4px solid white;
   }
   100% {
     background: gray;
-    border: 4px solid #ee5e5e;
   }
 }
 
